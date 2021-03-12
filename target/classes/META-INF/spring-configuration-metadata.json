@@ -1,0 +1,157 @@
+{
+  "groups": [
+    {
+      "name": "authentication",
+      "type": "br.com.euchef.webservice.login.properties.RouteAuthProperties",
+      "sourceType": "br.com.euchef.webservice.login.properties.RouteAuthProperties"
+    },
+    {
+      "name": "euChef",
+      "type": "br.com.euchef.webservice.properties.EuChefProperties",
+      "sourceType": "br.com.euchef.webservice.properties.EuChefProperties"
+    },
+    {
+      "name": "facebook",
+      "type": "br.com.euchef.webservice.login.properties.FacebookProperties",
+      "sourceType": "br.com.euchef.webservice.login.properties.FacebookProperties"
+    },
+    {
+      "name": "login",
+      "type": "br.com.euchef.webservice.login.properties.Properties",
+      "sourceType": "br.com.euchef.webservice.login.properties.Properties"
+    },
+    {
+      "name": "login.facebook",
+      "type": "br.com.euchef.webservice.login.model.passport.facebook.FacebookConfiguration",
+      "sourceType": "br.com.euchef.webservice.login.model.passport.facebook.FacebookConfiguration"
+    },
+    {
+      "name": "route",
+      "type": "br.com.euchef.webservice.login.properties.RouteProperties",
+      "sourceType": "br.com.euchef.webservice.login.properties.RouteProperties"
+    },
+    {
+      "name": "token",
+      "type": "br.com.euchef.webservice.login.properties.TokenProperties",
+      "sourceType": "br.com.euchef.webservice.login.properties.TokenProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "authentication.base",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.properties.RouteAuthProperties"
+    },
+    {
+      "name": "authentication.current-user",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.properties.RouteAuthProperties"
+    },
+    {
+      "name": "authentication.facebook-properties",
+      "type": "br.com.euchef.webservice.login.properties.FacebookProperties",
+      "sourceType": "br.com.euchef.webservice.login.properties.RouteAuthProperties"
+    },
+    {
+      "name": "authentication.refresh",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.properties.RouteAuthProperties"
+    },
+    {
+      "name": "authentication.sing-in",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.properties.RouteAuthProperties"
+    },
+    {
+      "name": "authentication.sing-up",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.properties.RouteAuthProperties"
+    },
+    {
+      "name": "euChef.lucene-index-path",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.properties.EuChefProperties"
+    },
+    {
+      "name": "facebook.login",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.properties.FacebookProperties"
+    },
+    {
+      "name": "login.facebook.app-id",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.model.passport.facebook.FacebookConfiguration"
+    },
+    {
+      "name": "login.facebook.app-secret",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.model.passport.facebook.FacebookConfiguration"
+    },
+    {
+      "name": "login.facebook.display",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.model.passport.facebook.FacebookConfiguration",
+      "defaultValue": "page"
+    },
+    {
+      "name": "login.facebook.facebook-access-url",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.model.passport.facebook.FacebookConfiguration",
+      "defaultValue": "https://graph.facebook.com/oauth/access_token"
+    },
+    {
+      "name": "login.facebook.facebook-authorize-url",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.model.passport.facebook.FacebookConfiguration",
+      "defaultValue": "https://graph.facebook.com/oauth/authorize"
+    },
+    {
+      "name": "login.facebook.facebook-me-url",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.model.passport.facebook.FacebookConfiguration",
+      "defaultValue": "https://graph.facebook.com/me"
+    },
+    {
+      "name": "login.facebook.redirect-uri",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.model.passport.facebook.FacebookConfiguration"
+    },
+    {
+      "name": "login.facebook.scope",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.model.passport.facebook.FacebookConfiguration",
+      "defaultValue": "email"
+    },
+    {
+      "name": "login.route",
+      "type": "br.com.euchef.webservice.login.properties.RouteProperties",
+      "sourceType": "br.com.euchef.webservice.login.properties.Properties"
+    },
+    {
+      "name": "login.token",
+      "type": "br.com.euchef.webservice.login.properties.TokenProperties",
+      "sourceType": "br.com.euchef.webservice.login.properties.Properties"
+    },
+    {
+      "name": "route.authentication",
+      "type": "br.com.euchef.webservice.login.properties.RouteAuthProperties",
+      "sourceType": "br.com.euchef.webservice.login.properties.RouteProperties"
+    },
+    {
+      "name": "token.expiration",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.properties.TokenProperties"
+    },
+    {
+      "name": "token.header",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.properties.TokenProperties"
+    },
+    {
+      "name": "token.secret",
+      "type": "java.lang.String",
+      "sourceType": "br.com.euchef.webservice.login.properties.TokenProperties"
+    }
+  ],
+  "hints": []
+}

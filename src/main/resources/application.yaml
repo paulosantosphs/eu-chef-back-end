@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: ${DATASOURCE_URL}
+    username: ${DATASOURCE_USERNAME}
+    password: ${DATASOURCE_PASSWORD}
+  jpa:
+    database: MYSQL
+    generate-ddl: true
+    ddl-auto: update
+
+euChef:
+  luceneIndexPath: ${LUCENE_INDEX_PATH}
+
+login:
+  facebook:
+    app-id: 1474358649281389
+    app-secret: ec99df3e7925d4567e24b81803de534c
+  token:
+    header: Access-Token
+    secret: shhhhhhh!!!!
+    expiration: 604800
+  route:
+    authentication:
+      base: auth
+      signIn: login
+      signUp: signUp
+      refresh: refresh
+      currentUser: me
+      facebook:
+        login: facebookLogin
+
+
+

@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+   eu_chef_db:
+     image: mysql:5.7
+     volumes:
+       - /srv/docker/eu-chef/mysql:/var/lib/mysql:Z
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: root
+       MYSQL_DATABASE: eu_chef
+       MYSQL_USER: eu_chef
+       MYSQL_PASSWORD: eu_chef
+       
+   eu_chef_webservice:
+     depends_on:
+       - eu_chef_db
+     image: eu-chef/webservice:latest
+     restart: always
+     volumes:
+       - /srv/docker/eu-chef/lucene-index:/var/index:Z
+     environment:
+       - "LUCENE_INDEX_PATH=/var/index"
+       - "DATASOURCE_URL=jdbc:mysql://eu_chef_db:3306/eu_chef?autoReconnect=true&useSSL=false"
+       - "DATASOURCE_USERNAME=eu_chef"
+       - "DATASOURCE_PASSWORD=eu_chef"
+       - "VIRTUAL_HOST=euchef.condor1693.dedicatedpanel.com"
+     networks:
+       - docker_default
+      
+networks:
+  docker_default:
+    external:
+      name: docker_default
